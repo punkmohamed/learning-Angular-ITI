@@ -1,0 +1,13 @@
+first question
+ we add interface types 
+interface Product {
+    name: string,
+    price: number
+}
+
+
+second question
+
+the error we use if('role' in person) 
+to check if the person has role or not 
+if he does not than he must be user else admin

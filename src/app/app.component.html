@@ -1,0 +1,22 @@
+<!-- <div class="container">
+  <section class="w-100 d-grid p-5">
+    <div class="row">
+      <div class="col-6">
+        <h1 [class]="user.age>50 ? 'bg-danger' : 'bg-primary'">My name is {{user.name}}</h1>
+        <h1 [class]="user.name ==='hamad' ? 'bg-dark' : 'bg-light'">My name is {{user.name}}</h1>
+        <h1>My age is {{user.age}} </h1>
+        <input type="text" class="form-control border-2 border-danger mx-auto w-25" [(ngModel)]="user.name"
+          (change)="($event)" [value]="user.name">
+        <button class="btn btn-outline-danger" (click)="changeName()">click me </button>
+        <button class="btn btn-outline-primary" (click)="changeNumber()">click me </button>
+        <br>
+      </div>
+      <img [src]="user.imageUrl" alt=""
+        [class]="user.name === 'circle' ?'rounded-circle w-50 h-50 col-6' :'rounded-5 w-50 h-50 col-6'">
+      <img [src]="user.imageUrl" alt="" [class]="user.name === 'gone' ?'d-none' :'d-inline w-50 h-50 col-6'">
+    </div>
+  </section>
+</div> -->
+<app-navbar></app-navbar>
+<app-home></app-home>
+<app-footer></app-footer>
