@@ -1,17 +1,15 @@
 import { Component, Input } from '@angular/core';
-import { SliderComponent } from "../slider/slider.component";
 import { ProductsComponent } from "../products/products.component";
-import { LogosComponent } from "../logos/logos.component";
 import Product from '../products/products'
 
 @Component({
-  selector: 'app-home',
+  selector: 'app-product-page',
   standalone: true,
-  imports: [SliderComponent, ProductsComponent, LogosComponent],
-  templateUrl: './home.component.html',
-  styleUrl: './home.component.css'
+  imports: [ProductsComponent],
+  templateUrl: './product-page.component.html',
+  styleUrl: './product-page.component.css'
 })
-export class HomeComponent {
+export class ProductPageComponent {
   product: Product[] = [
     {
       productName: 'Apex Legends',

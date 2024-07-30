@@ -1,3 +1,30 @@
 <app-slider></app-slider>
-<app-products></app-products>
+
+<div class="container pt-5">
+  <div>
+    <div class="header mb-5">
+      <span class="fs-5 trending">On Sale</span>
+      <div class="mt-3 d-flex justify-content-between align-items-center">
+        <h3 class=" fw-bold">On Sale Games</h3>
+        <button class="btn btn-outline-danger">VIEW ALL</button>
+      </div>
+    </div>
+    <div class="contant">
+      <div class="cards d-grid">
+        <div class="row gy-4">
+          @for (product of product; track $index) {
+          @if (product.onSale) {
+          <div class="col-3">
+            <app-products [product]="product"></app-products>
+          </div>
+          }
+          }
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<hr class="my-5">
+
 <app-logos></app-logos>

@@ -1,0 +1,17 @@
+<div class="container pt-5">
+  <div>
+    <div class="contant">
+      <div class="cards d-grid">
+        <div class="row gy-4">
+          @for (product of product; track $index) {
+          <div class="col-3">
+            <app-products [product]="product"></app-products>
+          </div>
+          }
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<hr class="my-5">
